@@ -1,0 +1,26 @@
+name: onetrust_publishers_native_cmp
+description: OneTrust is the leading Consent Management Platform (CMP) for mobile applications, websites, and Connected TVs. This plugin allows your application to leverage OneTrust's SDK for consent collection in your Flutter application.
+version: 202308.1.0
+homepage: https://onetrust.com
+
+environment:
+  sdk: '>=2.16.0 <3.0.0'
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.onetrust.flutter.otpublishersnativesdk.onetrust_publishers_native_cmp
+        pluginClass: OneTrustPublishersNativeCmpPlugin
+      ios:
+        pluginClass: OneTrustPublishersNativeCmpPlugin
+
